@@ -7,22 +7,14 @@ const data = [
 
 // 1. Print Developers
 function printDeveloper() {
-  // one way-
 
-  /* to filter out only the developers
-     I have used the inbuilt filter method in js */
-  data.filter(employee=>{
+  data.forEach(employee=>{
     if(employee.profession=="developer"){
       console.log(employee);
     }
-  })
+  });
 
-  // another way- using forEach inbuilt method
-  // data.forEach(worker=>{
-  //   if(worker.profession=="developer"){
-  //     console.log(worker);
-  //   }
-  // });
+  
 }
 
 
@@ -131,9 +123,12 @@ function sortByAge() {
   //Here I'm using array's built in method sort(a,b)
   // in which I pass 2 arguments a & b
 
-  data.sort((a,b)=>a.age-b.age);
+  data.sort((a,b)=> a.age - b.age);
   console.log(data);
 }
+
+
+
 
 // 9. Update Profession
 function updateJohnsProfession() {
