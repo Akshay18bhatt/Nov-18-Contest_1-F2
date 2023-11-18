@@ -101,7 +101,7 @@ function checkAgeAbove25() {
 
 // 7. Unique Professions
 function uniqueProfessions() {
-  const uniqueProfessionsArray=[];
+  let uniqueProfessionsArray=[];
 
   data.forEach(employee=>{
     const profession_of_employee= employee.profession;
